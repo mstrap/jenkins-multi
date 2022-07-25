@@ -12,13 +12,14 @@ pipeline {
       steps {
         echo "start ..."
         sh "date"
-        sh "exit 1"
+        sh "exit 0"
       }
     }
     stage('Test 2') {
       steps {
         echo "start ..."
         sh "date"
+        sh "exit 0"
       }
     }
   }
